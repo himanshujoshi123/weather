@@ -56,13 +56,13 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input
+            <input id="city"
               class="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-success" type="submit" id="submit">
               Search
             </button>
           </form>
@@ -70,185 +70,103 @@
       </div>
     </nav>
     <div class="container">
+      <h1 class="my-4 text-center">Weather for <span id="cityName"></span></h1>
       <main>
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
               <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Free</h4>
+                <h4 class="my-0 fw-normal">Temprature</h4>
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
-                  $0<small class="text-body-secondary fw-light">/mo</small>
+                  <span id="temp2"></span></li><small class="text-body-secondary fw-light"><span> &#8451;</span>
+                  </small>
                 </h1>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
-                  <li>2 GB of storage</li>
-                  <li>Email support</li>
-                  <li>Help center access</li>
+                  <li>Temperature is <span id="temp"></span></li>
+                  <li>Maximum Temprature is <span id="max_temp"></span></li>
+                  <li>Minimum temprature is <span id="min_temp"></span></li>
                 </ul>
-                <button
-                  type="button"
-                  class="w-100 btn btn-lg btn-outline-primary"
-                >
-                  Sign up for free
-                </button>
+               
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
               <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Pro</h4>
+                <h4 class="my-0 fw-normal">Wind Info</h4>
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
-                  $15<small class="text-body-secondary fw-light">/mo</small>
+                  <span id="humidity2"></span><small class="text-body-secondary fw-light"> %</small>
                 </h1>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>20 users included</li>
-                  <li>10 GB of storage</li>
-                  <li>Priority email support</li>
-                  <li>Help center access</li>
+                  <li>Wind degree is <span id="wind_degrees"></span></li>
+                  <li>Feels like is <span id="feels_like"></span></li>
+                  <li>Humidity is <span id="humidity"></span></li>
                 </ul>
-                <button type="button" class="w-100 btn btn-lg btn-primary">
-                  Get started
-                </button>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm border-primary">
               <div class="card-header py-3 text-bg-primary border-primary">
-                <h4 class="my-0 fw-normal">Enterprise</h4>
+                <h4 class="my-0 fw-normal">Sun Info</h4>
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
-                  $29<small class="text-body-secondary fw-light">/mo</small>
+                  <span id="wind_speed2"></span><small class="text-body-secondary fw-light"> Km/Hr</small>
                 </h1>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>30 users included</li>
-                  <li>15 GB of storage</li>
-                  <li>Phone and email support</li>
-                  <li>Help center access</li>
+                  
+                  <li>Wind speed is <span id="wind_speed"></span></li>
+                  <li>Sunrise time is <span id="sunrise"></span></li>
+                  <li>Sunset time is <span id="sunset"></span></li>
                 </ul>
-                <button type="button" class="w-100 btn btn-lg btn-primary">
-                  Contact us
-                </button>
               </div>
             </div>
           </div>
         </div>
 
-        <h2 class="display-6 text-center mb-4">Weather of other comman places</h2>
+        <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ... your existing head content ... -->
+  </head>
+  <body>
+    <!-- ... your existing body content ... -->
 
-        <div class="table-responsive">
-          <table class="table text-center">
-            <thead>
-              <tr>
-                <th style="width: 34%"></th>
-                <th style="width: 22%">Free</th>
-                <th style="width: 22%">Pro</th>
-                <th style="width: 22%">Enterprise</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="text-start">Sanghai</th>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Booston</th>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-              </tr>
-            </tbody>
+    <div class="container">
+      <!-- ... your existing content ... -->
 
-            <tbody>
-              <tr>
-                <th scope="row" class="text-start">Luknow</th>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Kolkata</th>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Unlimited members</th>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Extra security</th>
-                <td></td>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </main>
+      <!-- Updated table structure -->
+      <h2 class="display-6 text-center mb-4">Weather of other common places</h2>
+
+      <div class="table-responsive">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th style="width: 34%;"></th>
+              <th style="width: 22%">Cloud_pct</th>
+              <th style="width: 22%">Feels_like</th>
+              <th style="width: 22%">Humidity</th>
+              <th style="width: 22%">Max_temp</th>
+              <th style="width: 22%">Min_temp</th>
+              <th style="width: 22%">Sunrise</th>
+              <th style="width: 22%">Sunset</th>
+              <th style="width: 22%">Temp</th>
+              <th style="width: 22%">Wind_degrees</th>
+              <th style="width: 22%">Wind_speed</th>
+            </tr>
+          </thead>
+          <tbody id="otherPlacesWeather">
+          
+          </tbody>
+        </table>
+      </div>
     </div>
+        
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
